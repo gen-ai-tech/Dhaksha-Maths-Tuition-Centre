@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Primary Meta Tags -->
     <title>Dhaksha Maths Tuition Centre | Salem - Expert Math Coaching for Grades 6-12</title>
     <meta name="title" content="Dhaksha Maths Tuition Centre | Salem - Expert Math Coaching">
-    <meta name="description" content="Dhaksha Maths Academy in Salem provides expert home and center-based tuition for Mathematics. Specialized coaching for Class 6-12 and competitive exams.">
-    <meta name="keywords" content="Maths tuition Salem, Dhaksha Maths Academy, Salem tuition centre, Class 10 maths Salem, Class 12 maths Salem, Home tuition Salem">
+    <meta name="description"
+        content="Dhaksha Maths Academy in Salem provides expert home and center-based tuition for Mathematics. Specialized coaching for Class 6-12 and competitive exams.">
+    <meta name="keywords"
+        content="Maths tuition Salem, Dhaksha Maths Academy, Salem tuition centre, Class 10 maths Salem, Class 12 maths Salem, Home tuition Salem">
     <meta name="author" content="Dhaksha Academy">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dhakshamaths.com/">
     <meta property="og:title" content="Dhaksha Maths Tuition Centre | Salem">
-    <meta property="og:description" content="Expert Math Coaching for Grades 6-12 in Salem. Transform your performance with Dhaksha Academy.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1609155035300-15e1ffa95f12?q=80&w=1170&auto=format&fit=crop">
+    <meta property="og:description"
+        content="Expert Math Coaching for Grades 6-12 in Salem. Transform your performance with Dhaksha Academy.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1609155035300-15e1ffa95f12?q=80&w=1170&auto=format&fit=crop">
 
     <!-- DM Sans Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -52,27 +59,35 @@
 
     <style>
         @layer base {
-            html { scroll-behavior: smooth; }
-            body { 
-                @apply bg-white text-navy-950 overflow-x-hidden; 
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                @apply bg-white text-navy-950 overflow-x-hidden;
                 font-family: 'DM Sans', sans-serif;
             }
         }
-        
+
         .section-hidden {
             opacity: 0;
             transform: translateY(30px);
             transition: all 1s ease-out;
         }
-        
+
         .section-visible {
             opacity: 1;
             transform: translateY(0);
         }
 
         @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
         }
 
         .animate-marquee {
@@ -94,16 +109,17 @@
             background-color: #000;
             border-radius: 1.5rem;
         }
-        
+
         .syllabus-card:hover .syllabus-details {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .syllabus-card:hover .syllabus-image {
             transform: scale(1.1);
             opacity: 0.1;
         }
+
         .syllabus-card:hover {
             box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
         }
@@ -112,27 +128,51 @@
             @apply relative overflow-hidden transition-all duration-500 border-2 border-transparent;
             border-radius: 1rem !important;
         }
+
         .btn-premium::before {
             content: '';
             @apply absolute top-0 -left-full w-full h-full bg-white/20 transition-all duration-500 skew-x-12;
         }
+
         .btn-premium:hover::before {
             @apply left-full;
         }
+
         .btn-premium:hover {
-            @apply shadow-[0_0_20px_rgba(212,175,55,0.4)] scale-105;
+            @apply shadow-[0_0_20px_rgba(212, 175, 55, 0.4)] scale-105;
         }
 
         @keyframes slideInLeft {
-            from { opacity: 0; transform: translateX(-50px); }
-            to { opacity: 1; transform: translateX(0); }
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
+
         @keyframes slideInRight {
-            from { opacity: 0; transform: translateX(50px); }
-            to { opacity: 1; transform: translateX(0); }
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
-        .animate-hero-left { animation: slideInLeft 1s ease-out forwards; }
-        .animate-hero-right { animation: slideInRight 1s ease-out forwards; }
+
+        .animate-hero-left {
+            animation: slideInLeft 1s ease-out forwards;
+        }
+
+        .animate-hero-right {
+            animation: slideInRight 1s ease-out forwards;
+        }
 
         #progress-bar {
             height: 4px;
@@ -154,9 +194,22 @@
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-            40% {transform: translateY(-10px);}
-            60% {transform: translateY(-5px);}
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
         }
 
         .hero-glow {
@@ -164,6 +217,7 @@
         }
     </style>
 </head>
+
 <body class="math-pattern">
     <div id="progress-bar"></div>
     <div id="root"></div>
@@ -181,28 +235,28 @@
 
         const Icons = {
             GraduationCap: () => (
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z" /><path d="M6 12v5c3 3 9 3 12 0v-5" /></svg>
             ),
             Phone: () => (
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
             ),
-            WhatsApp: ({size=20}) => (
-                <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp: ({ size = 20 }) => (
+                <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
             ),
             StudentBoy: () => (
-                <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M12 14c-4.42 0-8 2-8 4.5V21h16v-2.5c0-2.5-3.58-4.5-8-4.5z"/></svg>
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor"><circle cx="12" cy="8" r="4" /><path d="M12 14c-4.42 0-8 2-8 4.5V21h16v-2.5c0-2.5-3.58-4.5-8-4.5z" /></svg>
             ),
             StudentGirl: () => (
-                <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M12 14c-4.42 0-8 2-8 4.5V21h16v-2.5c0-2.5-3.58-4.5-8-4.5z"/><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z" opacity="0.3"/></svg>
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor"><circle cx="12" cy="8" r="4" /><path d="M12 14c-4.42 0-8 2-8 4.5V21h16v-2.5c0-2.5-3.58-4.5-8-4.5z" /><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z" opacity="0.3" /></svg>
             ),
             MapPin: () => (
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>
             ),
             Check: () => (
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
             ),
-            Star: ({size=16}) => (
-                <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className="text-navy-950"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            Star: ({ size = 16 }) => (
+                <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className="text-navy-950"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
             )
         };
 
@@ -233,7 +287,7 @@
                     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
                     const scrolledVal = (winScroll / height) * 100;
                     const pb = document.getElementById("progress-bar");
-                    if(pb) pb.style.width = scrolledVal + "%";
+                    if (pb) pb.style.width = scrolledVal + "%";
                 };
                 window.addEventListener('scroll', handleScroll);
                 return () => window.removeEventListener('scroll', handleScroll);
@@ -268,19 +322,19 @@
                             ))}
                         </div>
 
-                        <a href={"tel:" + CONTACT_NUMBER} className="hidden md:block bg-gold-500 text-navy-950 px-3 py-1.5 font-black text-[12px] tracking-widest transition-all btn-premium shadow-lg">
+                        <a href={"tel:" + CONTACT_NUMBER} className="hidden md:block w-fit bg-gold-500 text-navy-950 px-3 py-1.5 font-black text-[12px] tracking-widest transition-all btn-premium shadow-lg">
                             Call Now
                         </a>
                     </div>
 
                     <div className={"md:hidden absolute top-full left-0 w-full bg-navy-950 border-t border-navy-800 transition-all duration-300 overflow-hidden " + (isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0')}>
-                        <div className="p-8 flex flex-col space-y-6">
+                        <div className="p-8 flex flex-col space-y-6 items-start">
                             {['Home', 'About', 'Services', 'Syllabus', 'Review', 'Contact'].map(link => (
                                 <a key={link} href={"#" + link.toLowerCase()} onClick={() => setIsOpen(false)} className="text-xl font-black text-navy-100 hover:text-gold-500 transition-colors">
                                     {link}
                                 </a>
                             ))}
-                            <a href={"tel:" + CONTACT_NUMBER} className="bg-gold-500 text-navy-950 px-3 py-1.5 font-black text-sm tracking-widest text-center btn-premium">
+                            <a href={"tel:" + CONTACT_NUMBER} className="self-start w-fit bg-gold-500 text-navy-950 px-3 py-1.5 font-black text-sm tracking-widest text-center btn-premium">
                                 Call Now
                             </a>
                         </div>
@@ -301,8 +355,8 @@
                         <p className="text-sm md:text-base text-navy-900 max-w-md mx-auto lg:mx-0 mb-8 md:mb-10 font-bold leading-relaxed">
                             Empowering students in Salem to master mathematical concepts through specialized Class 6-12 coaching and competitive exam prep. We deliver 100% focused, logic-driven results with personalized mentorship to ensure your academic success.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <a href={WHATSAPP_LINK} target="_blank" className="bg-navy-950 text-white px-3 py-2 font-black text-xs tracking-widest btn-premium shadow-2xl">
+                        <div className="flex flex-col sm:flex-row gap-4 items-start justify-center lg:justify-start">
+                            <a href={WHATSAPP_LINK} target="_blank" className="self-start w-fit bg-navy-950 text-white px-3 py-2 font-black text-xs tracking-widest btn-premium shadow-2xl">
                                 Free Demo Class
                             </a>
                         </div>
@@ -310,7 +364,7 @@
                     <div className="relative order-1 lg:order-2 animate-hero-right">
                         <div className="border-[6px] md:border-[10px] border-navy-950 shadow-2xl overflow-hidden aspect-[4/3] bg-navy-950 relative group rounded-[2.5rem]">
                             <img src="https://images.unsplash.com/photo-1609155035300-15e1ffa95f12?q=80&w=1170&auto=format&fit=crop" alt="Student studying math" className="w-full h-full object-cover opacity-95 transition-transform duration-[2000ms] group-hover:scale-110" />
-                            <div className="absolute inset-0 bg-navy-950/20 pointer-events-none mix-blend-overlay opacity-30 group-hover:opacity-10 transition-opacity duration-1000" style={{backgroundImage: 'url("https://www.transparenttextures.com/patterns/mathematics.png")'}}></div>
+                            <div className="absolute inset-0 bg-navy-950/20 pointer-events-none mix-blend-overlay opacity-30 group-hover:opacity-10 transition-opacity duration-1000" style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/mathematics.png")' }}></div>
                         </div>
                         <div className="absolute top-3 right-3 md:top-6 md:right-6 bg-gold-500 text-navy-950 p-4 md:p-6 font-black rounded-3xl shadow-2xl ring-4 ring-navy-950 z-10 scale-90 md:scale-100">
                             <div className="flex items-center gap-1 md:gap-2">
@@ -399,7 +453,7 @@
                                 <div key={i} className="syllabus-card bg-navy-950 border-[6px] md:border-8 border-navy-950 group shadow-2xl">
                                     <img src={c.img} className="syllabus-image absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-50 group-hover:opacity-10" alt={c.title} />
                                     <div className="h-full flex flex-col justify-center items-center text-center group-hover:opacity-0 transition-opacity duration-500 z-10 relative">
-                                        <span className="text-5xl md:text-6xl font-black text-gold-500 mb-2 md:mb-4 tracking-tighter opacity-80 italic">0{i+1}</span>
+                                        <span className="text-5xl md:text-6xl font-black text-gold-500 mb-2 md:mb-4 tracking-tighter opacity-80 italic">0{i + 1}</span>
                                         <h4 className="text-xl md:text-2xl font-black text-white mb-1 md:mb-2 tracking-tighter">{c.title}</h4>
                                         <p className="text-[10px] md:text-xs font-black text-gold-500 tracking-widest">Class {c.grades}</p>
                                     </div>
@@ -478,19 +532,19 @@
                                     <a href={"tel:" + CONTACT_NUMBER} className="text-base md:text-xl font-black text-white hover:text-gold-500 transition-colors tracking-tight">{CONTACT_NUMBER}</a>
                                 </div>
                             </div>
-                            <div className="flex flex-col sm:flex-row gap-4 pt-4 md:pt-6">
-                                <a href={WHATSAPP_LINK} target="_blank" className="bg-whatsapp text-white px-3 py-2 font-black text-[10px] md:text-xs flex items-center justify-center gap-2 rounded-2xl btn-premium shadow-2xl ring-2 ring-white/10">
+                            <div className="flex flex-col sm:flex-row gap-4 pt-4 md:pt-6 items-start">
+                                <a href={WHATSAPP_LINK} target="_blank" className="self-start w-fit bg-whatsapp text-white px-3 py-2 font-black text-[10px] md:text-xs flex items-center justify-center gap-2 rounded-2xl btn-premium shadow-2xl ring-2 ring-white/10">
                                     <Icons.WhatsApp />
                                     WhatsApp
                                 </a>
-                                <a href={WHATSAPP_LINK} target="_blank" className="bg-gold-500 text-navy-950 px-3 py-2 font-black text-[10px] md:text-xs btn-premium hover:bg-white transition-all tracking-widest shadow-2xl text-center flex items-center justify-center">
+                                <a href={WHATSAPP_LINK} target="_blank" className="self-start w-fit bg-gold-500 text-navy-950 px-3 py-2 font-black text-[10px] md:text-xs btn-premium hover:bg-white transition-all tracking-widest shadow-2xl flex items-center justify-center">
                                     Book Demo
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div className="h-[350px] md:h-[500px] border-[6px] md:border-[10px] border-navy-900 shadow-2xl rounded-[3rem] overflow-hidden grayscale-0 relative">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.671343753544!2d78.17066877481845!3d11.646849488862372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1e6b8f1c0bf%3A0x6b4f7a2b9a7a9a7a!2sSanniyasigundu%20Rd%2C%20Salem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1713780000000!5m2!1sen!2sin" width="100%" height="100%" style={{border:0}} loading="lazy" title="Location Map"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.671343753544!2d78.17066877481845!3d11.646849488862372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1e6b8f1c0bf%3A0x6b4f7a2b9a7a9a7a!2sSanniyasigundu%20Rd%2C%20Salem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1713780000000!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} loading="lazy" title="Location Map"></iframe>
                     </div>
                 </div>
             </AnimatedSection>
@@ -523,10 +577,10 @@
                     </div>
                     <div className="text-center md:text-right">
                         <h4 className="text-white font-black text-sm tracking-widest mb-6">Contact Info</h4>
-                        <p className="text-navy-400 text-base font-bold mb-2">Salem, Tamil Nadu 636015</p>
+                        <p className="text-navy-400 text-base font-bold mb-2">136B, Sanniyasigundu Rd, Anna Nagar, Kitchipalayam, Salem, Tamil Nadu 636015</p>
                         <p className="text-navy-400 text-base font-bold mb-4">Phone: {CONTACT_NUMBER}</p>
                         <div className="flex justify-center md:justify-end gap-4">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -551,7 +605,7 @@
                         <Contact />
                     </main>
                     <Footer />
-                    
+
                     <a href={WHATSAPP_LINK} target="_blank" className="floating-whatsapp bg-whatsapp text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center" aria-label="Contact on WhatsApp">
                         <Icons.WhatsApp size={32} />
                     </a>
@@ -563,4 +617,5 @@
         root.render(<App />);
     </script>
 </body>
+
 </html>
